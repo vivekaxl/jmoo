@@ -39,8 +39,28 @@ from time import *
 import os
 
 
+def getSum(listoflist):
+    """
+    getSum([[1,2,3],[1,2,3],[1,2,3]]) -> [3,6,9]
+    :param listoflist:
+    :return: sum
+    """
+    """
+    :param listoflist:
+    :return:
+    """
+    assert(len(listoflist) != 0 ),"list is empty"
+    score =[]
+    for element in xrange(len(listoflist[0])):
+        temp = 0
+        for obj in xrange(len(listoflist)): # number of objectives
+            temp += listoflist[obj][element]
+        score.append(temp)
+    return score
+
+
 def joes_stats_reporter(problems, algorithms, tag=""):
-    print "HERE>>>>>>>>>>>>>>>>>>"
+    #print "HERE>>>>>>>>>>>>>>>>>>"
     #folder prefix for storing reports
     date_folder_prefix = strftime("%m-%d-%Y")
     
@@ -74,11 +94,14 @@ def joes_stats_reporter(problems, algorithms, tag=""):
                     
                 elements = row
                 data[p][a][0].append( int(elements[2]) )
+                #print "Element 2: ",elements[2]
+                #print "Number of objective: ", len(problem.objectives)
                 for o,obj in enumerate(problem.objectives):
                     data[p][a][1+o].append( float(elements[3+o]) )
                 data[p][a][1+len(problem.objectives)].append( float(elements[3+len(problem.objectives)]) )
                 data[p][a][2+len(problem.objectives)].append( float(elements[4+len(problem.objectives)]) )
                 data[p][a][3+len(problem.objectives)].append( float(elements[5+len(problem.objectives)]) )
+
             s = '{0: <12}'.format(problem.name) + "," + '{0: <12}'.format(algorithm.name) + ","
             for dug in data[p][a]:
                 s += str("%10.2f" % avg(dug)) + ","
@@ -93,7 +116,7 @@ def joes_stats_reporter(problems, algorithms, tag=""):
             if i > MU:
                 s += str("%10.2f" % float(row[1])) + ","
         s += str("%10.2f" % 1) + "," + str("%10.2f" % 0)
-        print s
+        #print s
         fa.write(s + "\n")
                 
         
@@ -101,6 +124,7 @@ def joes_stats_reporter(problems, algorithms, tag=""):
         IBDs = [data[p][a][1+len(problem.objectives)] for a in range(len(algorithms))]
         AVGs = [avg(IBDs[a]) for a in range(len(algorithms))]
         #print avg(IBDs[0]), avg(IBDs[1]), avg(IBDs[2])
+        #print IBDs
 
         
         z1,p1 = stats.ranksums(IBDs[0], IBDs[1])
@@ -153,6 +177,19 @@ def joes_stats_reporter(problems, algorithms, tag=""):
         for dig,dug in zip(reports, rank_reports):
             print dig, dug
             fa.write(dig + dug + "\n")
+
+        # Vivek: Adding skott knott
+        from collections import defaultdict
+        scores = defaultdict(list)
+        for a in xrange(len(algorithms)):
+            #print "algorithms[a].name: ", algorithms[a].name
+            scores[algorithms[a].name] = []
+            temp = []
+            for i in xrange(len(problem.objectives)):
+                temp.append(data[p][a][i+1])
+            scores[algorithms[a].name].extend(getSum(temp))
+
+        callrdivdemo(scores)
         
         
     
@@ -161,6 +198,11 @@ def joes_stats_reporter(problems, algorithms, tag=""):
     for rk,alg in zip(algranks, algorithms):
         print alg.name + ":" + str("%12.2f" % avg(rk))
         fa.write(alg.name + ":" + str("%12.2f" % avg(rk)) + "\n")
+
+
+
+
+
         
     fa.close()
         

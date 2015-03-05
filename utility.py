@@ -29,6 +29,7 @@
 
 import numpy 
 import math
+from sk import *
 
 def avg(list):
     return (float)(sum(list))/(float)(len(list))
@@ -240,3 +241,22 @@ x4 = [8, 6, 5, 4]
 x5 = [0.4, 0.5, 0.4, 0.3]
 x6 = [4, 5, 4, 3]
 """
+
+
+def callrdivdemo(eraCollector):
+  #print eraCollector
+  #print "callrdivdemo %d"%len(eraCollector.keys())
+  keylist = eraCollector.keys()
+  #print keylist
+  variant = len(keylist)
+  #print variant
+  rdivarray=[]
+  for y in xrange(variant):
+      #print "Length of array: %f"%len(eraCollector[keylist[y]][x])
+      temp = eraCollector[keylist[y]]
+      #print temp
+      temp.insert(0,str(keylist[y]))
+      #print temp
+      rdivarray.append(temp)
+  rdivDemo(rdivarray)
+

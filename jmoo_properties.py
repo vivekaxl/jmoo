@@ -43,11 +43,11 @@ algorithms = [
 
 problems = [
             
-            #fonseca(3),
+            fonseca(3),
             #zdt1()
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
-            zdt1()#, osyczka2(), viennet2(), tanaka(), schaffer(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
+            #zdt1(), osyczka2(), viennet2(), tanaka(), schaffer(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
