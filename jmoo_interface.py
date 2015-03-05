@@ -76,7 +76,7 @@ for i,arg in enumerate(sys.argv):
 # Build new initial populations if suggested.  Before tests can be performed, a problem requires an initial dataset.
 if build_new_pop:
     for problem in problems:
-        initialPopulation(problem, MU)
+        initialPopulation(problem, MU) # problems and MU are from jmoo_properties.py
         
 # Wrap the tests in the jmoo core framework
 tests = jmoo_test(problems, algorithms)
@@ -89,6 +89,7 @@ elif reportOnly: reports = [jmoo_stats_report(tests)]
 elif noReports: reports = []
 else: reports = [jmoo_stats_report(tests), jmoo_decision_report(tests), jmoo_chart_report(tests)]
 
+print reports
 # Associate core with tests and reports
 core = JMOO(tests, reports)
 

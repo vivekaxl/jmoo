@@ -134,7 +134,7 @@ def galeMutate(problem, NDLeafs):
             x    = (a**2 + row.c**2 - b**2) / (2*row.c+0.00001)
             
             #Test Mutant for Acceptance
-            GAMMA = 0.15 #note: make this a property
+            GAMMA = 0.15 #note: make this a property #Vivek: I think this should not be here
             
             #print abs(cx-x), (cx + (g * GAMMA))
             if abs(x-cx) > (g * GAMMA) or problem.evalConstraints(row.cells[:n]): #reject it

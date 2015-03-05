@@ -43,14 +43,14 @@ import pom3
 def distance(in1, in2):
     return sum([abs(x-y) for x,y in zip(in1,in2)])**0.5
 
-def initialPopulation(problem, n):
+def initialPopulation(problem, n): #DONE
     #generate dataset
     dataset = []
     for run in range(n):
         dataset.append(problem.generateInput())
         
     #write the dataset to file
-    filename = "data/" + problem.name + str(n) + "dataset.txt"  #i.e. "Golinski100dataset.txt"  
+    filename = "data/" + problem.name + str(n) + "dataset.txt"  #i.e. "Golinski100dataset.txt"
     fo = open(filename, 'w')
     h = problem.buildHeader() #the header row
     fo.write(h + "\n")
@@ -63,7 +63,7 @@ def initialPopulation(problem, n):
     #take first X guys of dataset to get reference point and objective highs and lows
     fitnesses = []
     for i in range(500):
-        fitnesses.append( problem.evaluate(problem.generateInput()) )
+        fitnesses.append(problem.evaluate(problem.generateInput())) #ASKJOE: the comment suggests that you take the first X guys and evaluate, but you are generating new points here.
     # Split Columns into Lists
     fitnessColumns = [[fit[i] for fit in fitnesses] for i,obj in enumerate(problem.objectives)]
 
@@ -154,8 +154,9 @@ class schaffer(jmoo_problem):
     "Schaffer"
     def __init__(prob):
         prob.name = "Schaffer"
-        prob.decisions = [jmoo_decision("x1", -10, 10)]
+        prob.decisions = [jmoo_decision("x1", -10, 10)] #read as decision container (name, min, max)
         prob.objectives = [jmoo_objective("f1", True), jmoo_objective("f2", True)]
+        # read as objective container (name, less is more) Since we would be trying to minimize, it has been assigned as True.
     def evaluate(prob, input = None):
         if input:
             for i,decision in enumerate(prob.decisions):

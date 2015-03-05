@@ -36,6 +36,7 @@ class Table(object):
     i.n = len(i.headers)
     i.puts(data)
 
+
   def puts(i,data):
     for cells in data:
        i.put(cells)

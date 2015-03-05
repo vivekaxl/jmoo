@@ -34,18 +34,20 @@ from jmoo_problems import *
 # JMOO Experimental Definitions
 algorithms = [
               
-              #MOEAS.jmoo_NSGAII(),
-              MOEAS.jmoo_GALE(), 
-              #MOEAS.jmoo_SPEA2()
+              MOEAS.jmoo_NSGAII(),
+              MOEAS.jmoo_GALE(),
+              MOEAS.jmoo_SPEA2(),
+              MOEAS.jmoo_DE()
               
               ]
 
 problems = [
             
-            fonseca(3)
+            #fonseca(3),
+            #zdt1()
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
-            #srinivas(), zdt1(), osyczka2(), viennet2(), tanaka(), schaffer(), golinski(), POM3A(), POM3B(), POM3C(), POM3D()
+            zdt1()#, osyczka2(), viennet2(), tanaka(), schaffer(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
@@ -53,7 +55,7 @@ build_new_pop = False                                       # Whether or not to 
 
 
 # JMOO Universal Properties
-repeats = 20    #Repeats of each MOEA
+repeats = 10    #Repeats of each MOEA
 MU      = 100   #Population Size
 PSI     = 20    #Maximum number of generations
 
@@ -61,6 +63,10 @@ PSI     = 20    #Maximum number of generations
 GAMMA   = 0.15  #Constrained Mutation Parameter
 EPSILON = 1.00  #Continuous Domination Parameter
 LAMBDA =  3     #Number of lives for bstop
+
+# Propoerties of DE
+F = 0.75 # extrapolate amount
+CF = 0.3 # prob of cross over
 
 # File Names
 DATA_PREFIX        = "data/"

@@ -36,9 +36,14 @@ import os,sys,inspect
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe()))[0],"GALE")))
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
+
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe()))[0],"DE")))
+if cmd_subfolder not in sys.path:
+    sys.path.insert(0, cmd_subfolder)
     
 from jmoo_individual import *
 from gale_components import *
+from de_components import *
 from jmoo_properties import *
 from utility import *
 import jmoo_stats_box
@@ -70,11 +75,21 @@ class jmoo_SPEA2:
 class jmoo_GALE:
     def __init__(self, color="Red"):
         self.name = "GALE"
-        self.selector = galeWHERE
+        self.selector = galeWHERE #return all non dominated leaves and  number of evaluations
         self.adjustor = galeMutate
         self.recombiner = galeRegen
         self.color = color
         self.type = '*'
+
+class jmoo_DE:
+    def __init__(self, color="Purple"):
+        self.name = "DE"
+        self.selector = de_selector
+        self.adjustor = de_mutate
+        self.recombiner = de_recombine #stub
+        self.color = color
+        self.type = '+'
+
 
 class Bin:
     def __init__(self):
@@ -245,9 +260,11 @@ def default_toStop(statBox):
 def bstop(statBox):
     stop = True
     for o,obj in enumerate(statBox.problem.objectives):
+        #print ">>>>>>>>>>>>>", statBox.box[-1].changes[o],statBox.bests[o], statBox.lives
         if statBox.box[-1].changes[o] <= statBox.bests[o]: stop = False
     
     if stop == True:
+        print ">>>>>>>>> Lost life"
         statBox.lives += -1
         
     return stop and statBox.lives == 0

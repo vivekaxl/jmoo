@@ -61,6 +61,8 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
     # 2) Load Initial Population  #
     # # # # # # # # # # # # # # # #
     population = problem.loadInitialPopulation(MU)
+    #Vivek:
+    #print "Length of population: ",len(population)
     
     # # # # # # # # # # # # # # #
     # 3) Collect Initial Stats  #
@@ -73,7 +75,7 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
     
     while gen < PSI and stoppingCriteria == False:
         gen+= 1
-        
+        #print "Generation: ",gen
         # # # # # # # # #
         # 4a) Selection #
         # # # # # # # # #
@@ -110,6 +112,7 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
         # 4e) Evaluate Stopping Criteria  #
         # # # # # # # # # # # # # # # # # #
         stoppingCriteria = toStop(statBox)
+        #print ">>>>>>>> Stopping Criteria: ",stoppingCriteria
         #stoppingCriteria = False
         
         

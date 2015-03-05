@@ -206,12 +206,18 @@ def loss(x1, x2, mins=None, maxs=None):
         x1 = [normalize(x, mins[i], maxs[i]) for i,x in enumerate(x1)]
         x2 = [normalize(x, mins[i], maxs[i]) for i,x in enumerate(x2)]
     
-    o = min(len(x1), len(x2)) #len of x1 and x2 should be equal 
+    o = min(len(x1), len(x2)) #len of x1 and x2 should be equal
+    # print "x1: ", x1,
+    # print "x2: ", x2,
+    # print sum([math.exp((x2i - x1i)/o) for x1i, x2i in zip(x1,x2)])/o
+    # #exit()
     return sum([math.exp((x2i - x1i)/o) for x1i, x2i in zip(x1,x2)])/o
 
 def cdom(x1, x2, mins=None, maxs=None):
     return loss(x1,x2, mins, maxs) / loss(x2,x1, mins, maxs)
 
+
+#Vivek: Standard Deviation of the dataset
 def spacing(dataset):
     dim = len(dataset[0])
     d_ = []

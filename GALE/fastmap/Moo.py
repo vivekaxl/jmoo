@@ -25,7 +25,10 @@ import random
 import math
 
 
-class Moo(BinaryTree): 
+class Moo(BinaryTree):
+  #t: Table()
+  #big_n: len(t.rows)
+
   def __init__(i,problem, t, big_n, N=1):
     
     BinaryTree.__init__(i)
@@ -81,6 +84,7 @@ class Moo(BinaryTree):
     
     # Find a good splitting point  
     m, _ = i.binaryChop(i.table.rows, n/2, None, 2*n ** 0.5, n)
+    #Vivek: m is the cut which achieves min(lhsdelta - rhsdelta)
     
     # Proceed if not aborted   
     i.abort = The.allowDomination and abort
@@ -151,7 +155,7 @@ class Moo(BinaryTree):
       z = len(i.problem.decisions)
       leftSpread = spacing([l.cells[:z] for l in left]) #var([l.x for l in left])
       rightSpread = spacing([r.cells[:z] for r in right]) #var([r.x for r in right])
-      delta = abs(leftSpread - rightSpread)
+      delta = abs(leftSpread - rightSpread) #sdiv
       #print delta, cut
       #recurse
       lhscut,lhsdelta = i.binaryChop(rows, cut/2, delta, min_n, cut)

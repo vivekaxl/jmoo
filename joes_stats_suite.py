@@ -40,7 +40,7 @@ import os
 
 
 def joes_stats_reporter(problems, algorithms, tag=""):
-    
+    print "HERE>>>>>>>>>>>>>>>>>>"
     #folder prefix for storing reports
     date_folder_prefix = strftime("%m-%d-%Y")
     
@@ -101,6 +101,7 @@ def joes_stats_reporter(problems, algorithms, tag=""):
         IBDs = [data[p][a][1+len(problem.objectives)] for a in range(len(algorithms))]
         AVGs = [avg(IBDs[a]) for a in range(len(algorithms))]
         #print avg(IBDs[0]), avg(IBDs[1]), avg(IBDs[2])
+
         
         z1,p1 = stats.ranksums(IBDs[0], IBDs[1])
         z2,p2 = stats.ranksums(IBDs[0], IBDs[2])

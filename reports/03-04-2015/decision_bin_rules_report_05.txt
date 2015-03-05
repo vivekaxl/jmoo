@@ -1,0 +1,12 @@
+Fonseca         ,GALE            ,DecisionNames,        x1,      x2,      x3,
+Fonseca         ,GALE            ,LowerBounds,       -0.14,   -0.08,   -0.13,
+Fonseca         ,GALE            ,UpperBounds,        0.22,    0.26,    0.17,
+Fonseca         ,GALE            ,ObjectiveNames,       f1,      f2,
+Fonseca         ,GALE            ,Validation,         0.56,    0.70,    0.71,    0.01
+Fonseca         ,,               ,Baseline,           0.99,    0.99,
+Fonseca         ,DE              ,DecisionNames,        x1,      x2,      x3,
+Fonseca         ,DE              ,LowerBounds,        0.29,   -0.43,   -0.75,
+Fonseca         ,DE              ,UpperBounds,        0.67,   -0.04,   -0.47,
+Fonseca         ,DE              ,ObjectiveNames,       f1,      f2,
+Fonseca         ,DE              ,Validation,         0.86,    0.73,    0.74,    0.09
+Fonseca         ,,               ,Baseline,           0.99,    0.99,

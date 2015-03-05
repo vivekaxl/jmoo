@@ -59,39 +59,21 @@ class jmoo_stats_box:
         statBox.foam = [{} for o in problem.objectives]
         statBox.bests = [100.0 for o in problem.objectives]
         statBox.bests_actuals = [0 for o in problem.objectives]
-        statBox.lives = 3
+        statBox.lives = 3 # Vivek: Should be replaced by Lambda
     
     def update(statBox, population, gen, numNewEvals, initial = False, printOption=True):
         "add a stat box - compute the statistics first"
         fa = open("data/results_"+statBox.problem.name+"_"+statBox.alg.name+".datatable", 'a')
         
         # Calculate percentage of violations
-        violationsPercent = sum([ 1 for pop in population if statBox.problem.evalConstraints(pop.decisionValues)])/float(len(population))
+        violationsPercent = sum([ 1 for pop in population if statBox.problem.evalConstraints(pop.decisionValues)])/float(len(population)) # not sure what is this used for
         
         # Update Number of Evaluations
         statBox.numEval += numNewEvals
-        #front = population
-        #for pop in population:
-        #    if not pop.valid: pop.evaluate()
-        population = [pop for pop in population if pop.fitness.valid]
+
+        population = [pop for pop in population if pop.fitness.valid] # population for which the score is calculated
         
-        #population = jmoo_algorithms.deap_format(statBox.problem, population)
-        
-        #front = ParetoFront()
-        #front.update(population)
-        
-        """
-        fitnesses = []
-        population = []
-        for i,dIndividual in enumerate(front):
-            cells = []
-            for j in range(len(dIndividual)):
-                cells.append(dIndividual[j])
-            fit = []
-            for k in range(len(statBox.problem.objectives)):
-                fit.append(dIndividual.fitness.values[k])
-            population.append( jmoo_individual(statBox.problem, cells, fit) )
-        """         
+
         # Evaluate Fitnesses
         #for individual in population:
         #    if not individual.valid: individual.evaluate()
@@ -109,18 +91,14 @@ class jmoo_stats_box:
         
         # Initialize Reference Point on Initial Run
         if initial == True:
-            #statBox.referencePoint = fitnessMedians 
-            #statBox.referencePoint = statBox.problem.referencePoint
-            #statBox.referencePoint = statBox.problem.evaluate(population[0].decisionValues)
             statBox.referencePoint = [o.med for o in statBox.problem.objectives]
-            print [(o.low, o.up) for o in statBox.problem.objectives]
             
 
         # Calculate IBD & IBS
         norms = [[min(fitnessColumns[i]+[statBox.referencePoint[i]]), max(fitnessColumns[i]+[statBox.referencePoint[i]])] for i,obj in enumerate(statBox.problem.objectives)]
         lossInQualities = [loss_in_quality(statBox.problem, [statBox.referencePoint], fit, norms) for fit in fitnesses]
-        IBD = median(lossInQualities)
-        IBS = spread(lossInQualities)
+        IBD = median(lossInQualities) #median
+        IBS = spread(lossInQualities) #IQR
         
         if initial == True:
             IBD = 1.0
@@ -171,7 +149,8 @@ class jmoo_stats_box:
 ### Utility Functions
 ###########
 
-def percentChange(new, old, lismore, low, up):
+def percentChange(new, old, lismore, low, up): # old mean the baseline result
+    #print "percentChange: old: ",old," new:",new
     return str("%1.1f" % changeFromOld(new, old, lismore, low, up)) + "%"
 def changeFromOld(new, old, lismore, low, up):
     if new < 0 or old < 0: 
@@ -179,10 +158,6 @@ def changeFromOld(new, old, lismore, low, up):
         new = abs(new)
         old = abs(old)
     else: ourlismore = lismore
-    
-
-    
-    
     #if new == 0 or old == 0: return 0 if ourlismore else 110
     new = normalize(new, low, up)
     old = normalize(old, low, up)
@@ -192,6 +167,8 @@ def changeFromOld(new, old, lismore, low, up):
         if ourlismore: return 0
         else: return 1
     else: return 100.0*x**(1 if ourlismore else -1)
+
+
 def median(list):
     return getPercentile(list, 50)
 
