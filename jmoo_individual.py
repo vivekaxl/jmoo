@@ -30,10 +30,18 @@
 from jmoo_fitness import *
 
 class jmoo_individual:
-    def __init__(ind, problem, decisionValues, fitness = None):
+    def __init__(ind, problem, decisionValues, fitness = None, index=-1):
+        ind.index = index
         ind.problem = problem
         ind.decisionValues = decisionValues
         ind.fitness = jmoo_fitness(problem, fitness=fitness)
+
+    def __str__(ind): #Vivek
+        string = "Problem: ", str(ind.problem.name)
+        string += "Decisions: ", str(ind.decisionValues)
+        string += "Fitness: ", str(ind.fitness.fitness)
+        return str(string)
+
     def evaluate(ind):
         if ind.fitness: 
             ind.fitness.setFitness( ind.problem.evaluate(ind.decisionValues) )

@@ -35,3 +35,9 @@ class jmoo_objective:
         obj.lismore = lismore           # optimization direction.  lismore = less is more = true if minimize
         obj.low = low                   # lower bound if any; set to none if unknown
         obj.up = up                     # upper bound if any; set to none if unknown
+
+    def __str__(obj):
+        string = "Name:" +str(obj.name)
+        string += ", Low: "+str(obj.low)
+        string += ", Up:  "+str(obj.up)
+        return string
