@@ -18,7 +18,7 @@ class LeftGaussianFunction:
         if x <= i.c:
             return 1
         else:
-            return math.exp(-0.5 * ((x-i.c)/i.sigma)**2)
+            return math.exp(-0.5 * (((x-i.c)/i.sigma)**2))
 
     def do_it(i):
         return [i.do_it_x(vec) for vec in i.vector]
@@ -75,13 +75,13 @@ def fuzzy_fitness_measurement(individual, population):
     """
     FFM = 0
     for v in population:
-        dom = DominanceRelation(individual,v)
+        dom = DominanceRelation(individual, v)
         dom_individual, _ = dom.domination_degree()
         FFM += dom_individual
 
     return FFM/len(population)
 
-def better(problem,individual,mutant):
+def better2(problem,individual,mutant):
     # From Joe: Score the poles
     n = len(problem.decisions)
     weights = []
@@ -98,16 +98,28 @@ def better(problem,individual,mutant):
 
     return False if individual_loss < mutant_loss else True
 
+
+def better(old, new):
+    assert (len(old) == len(new)), "Length mismatch"
+    for o, n in zip(old, new):
+        if o <= n:
+            pass
+        else:
+            return False
+    return True
+
+
 def fast_domination_sort(problem, population):
     non_dominated = []
     for p in population:
         count = 0
         for q in population:
             if p != q:  # don't compare p with q
-                if better(problem, q, p):
+                if better(q.fitness.fitness, p.fitness.fitness):
                     count += 1
         if count == 0:
             non_dominated.append(p)
+    print "Length of the non_dominated: ", len(non_dominated)
     return non_dominated
 
 
@@ -118,20 +130,31 @@ def baseline(problem, population):
     low = [1e6 for _ in xrange(obj)]
     for p in population:
         for o in xrange(obj):
-            if up[o] < p.fitness.fitness[o]: up[o] = p.fitness.fitness[o]
-            elif low[o] > p.fitness.fitness[o]: low[o] = p.fitness.fitness[o]
+            if up[o] < p.fitness.fitness[o]:
+                up[o] = p.fitness.fitness[o]
+            elif low[o] > p.fitness.fitness[o]:
+                low[o] = p.fitness.fitness[o]
     for o, obj in enumerate(problem.objectives):
-        rangeX5 = up[o] - low[o]
-        obj.low = -1*rangeX5
-        obj.up = rangeX5
-    return problem
+        obj.low = low[o]
+        obj.up = up[o]
+
+    for pop in population:
+        for o in xrange(len(problem.objectives)):
+            xrange1 = problem.objectives[o].up - problem.objectives[o].low
+            range2 = 2
+            #print "xrange1: ", xrange1
+            #print "0-1: ", ((pop.fitness.fitness[o] - problem.objectives[o].low)/xrange1)
+            #print "-1-1: ", (((pop.fitness.fitness[o] - problem.objectives[o].low)/xrange1)*range2)-1
+            # normalizing values in range -1,1
+            pop.fitness.fitness[o] = (((pop.fitness.fitness[o] - problem.objectives[o].low)/xrange1)*range2) - 1
+    return population
 
 
 def try_it():
-    random.seed(3)
-    problem = viennet2()
-    population = generate_population(problem,100)
-    problem = baseline(problem,population)
+    #random.seed(4)
+    problem = zdt1()
+    population = generate_population(problem, 100)
+    population = baseline(problem, population)
     for i in xrange(len(population)):
         individual = population[i]
         individual.FFM = fuzzy_fitness_measurement(individual, population[:i]+population[i:])
@@ -141,8 +164,11 @@ def try_it():
 
     print max(pop.FFM for pop in population)
 
-    what I am trying to do here is to find whether fuzzy pareto actuall works. The easiest way to check difference is
-    to find a set of non dominated solutions and then find the fuzzy score.
+    print sorted([p.FFM for p in population])
+
+
+    #what I am trying to do here is to find whether fuzzy pareto actuall works. The easiest way to check difference is
+    #to find a set of non dominated solutions and then find the fuzzy score.
 
 
 
