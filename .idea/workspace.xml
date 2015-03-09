@@ -2,6 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="307e3a3d-ec87-4f54-8ad8-0504ec602ed7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts/03-09-2015/figure01_DTLZ1_.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts/03-09-2015/figure02_DTLZ1_.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts/03-09-2015/figure03_DTLZ1_.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts/03-09-2015/figure04_DTLZ1_.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DTLZ1100dataset.txt" afterPath="$PROJECT_DIR$/data/DTLZ1100dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExperimentRecords.xml" afterPath="$PROJECT_DIR$/ExperimentRecords.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Golinski100dataset.txt" afterPath="$PROJECT_DIR$/data/Golinski100dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Schaffer100dataset.txt" afterPath="$PROJECT_DIR$/data/Schaffer100dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Tanaka100dataset.txt" afterPath="$PROJECT_DIR$/data/Tanaka100dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Viennet2100dataset.txt" afterPath="$PROJECT_DIR$/data/Viennet2100dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DE/de_components.py" afterPath="$PROJECT_DIR$/DE/de_components.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Golinski_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GALE/gale_components.py" afterPath="$PROJECT_DIR$/GALE/gale_components.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_algorithms.py" afterPath="$PROJECT_DIR$/jmoo_algorithms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_properties.py" afterPath="$PROJECT_DIR$/jmoo_properties.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joes_moo_charter.py" afterPath="$PROJECT_DIR$/joes_moo_charter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_DTLZ1_DE.datatable" afterPath="$PROJECT_DIR$/data/results_DTLZ1_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_DTLZ1_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_DTLZ1_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Golinski_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Golinski_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Schaffer_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Schaffer_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Schaffer_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Schaffer_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Tanaka_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Tanaka_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Viennet2_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Viennet2_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_.datatable" afterPath="$PROJECT_DIR$/data/summary_.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_DTLZ1_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_DTLZ1_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Golinski_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Golinski_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Schaffer_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Schaffer_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Schaffer_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Schaffer_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Tanaka_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Tanaka_GALE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Viennet2_DE.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Viennet2_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jmoo.iws" />
@@ -29,8 +85,8 @@
       <file leaf-file-name="jmoo_algorithms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jmoo_algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="4425">
-              <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1063" max-vertical-offset="4575">
+              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -39,7 +95,7 @@
       <file leaf-file-name="jmoo_interface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jmoo_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1575">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1060" max-vertical-offset="1575">
               <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
               <folding>
                 <element signature="e#1064#1093#0" expanded="true" />
@@ -48,11 +104,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmoo_properties.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joes_stats_suite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joes_stats_suite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="3150">
+              <caret line="129" column="39" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jmoo_properties.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jmoo_properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1335">
-              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.93775934" vertical-offset="418" max-vertical-offset="1350">
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="joes_moo_charter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joes_moo_charter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.925926" vertical-offset="719" max-vertical-offset="3810">
+              <caret line="154" column="76" selection-start-line="154" selection-start-column="71" selection-end-line="154" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -61,39 +137,21 @@
       <file leaf-file-name="gale_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GALE/gale_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="2580">
-              <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1858" max-vertical-offset="3285">
+              <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FuzzyPareto/demo.py">
+      <file leaf-file-name="de_components.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DE/de_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4065934" vertical-offset="2245" max-vertical-offset="2880">
-              <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jmoo_problems.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_problems.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.703704" vertical-offset="4469" max-vertical-offset="12885">
-              <caret line="317" column="8" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jmoo_decision.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_decision.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="268" max-vertical-offset="750">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding />
+            <state vertical-scroll-proportion="-3.2222223" vertical-offset="320" max-vertical-offset="1695">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,19 +159,11 @@
       <file leaf-file-name="jmoo_problem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jmoo_problem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1695">
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1710">
               <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jmoo_core.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="3090">
-              <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
-              <folding />
+              <folding>
+                <element signature="e#1085#1114#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,19 +190,20 @@
         <option value="$PROJECT_DIR$/GALE/fastmap/Moo.py" />
         <option value="$PROJECT_DIR$/GALE/fastmap/Slurp.py" />
         <option value="$PROJECT_DIR$/jmoo_problem.py" />
-        <option value="$PROJECT_DIR$/DE/de_components.py" />
         <option value="$PROJECT_DIR$/jmoo_jmoea.py" />
         <option value="$PROJECT_DIR$/jmoo_stats_box.py" />
         <option value="$PROJECT_DIR$/jmoo_interface.py" />
-        <option value="$PROJECT_DIR$/jmoo_algorithms.py" />
         <option value="$PROJECT_DIR$/data/ZDT1100dataset.txt" />
         <option value="$PROJECT_DIR$/sk.py" />
         <option value="$PROJECT_DIR$/utility.py" />
         <option value="$PROJECT_DIR$/joes_stats_suite.py" />
         <option value="$PROJECT_DIR$/jmoo_problems.py" />
-        <option value="$PROJECT_DIR$/GALE/gale_components.py" />
-        <option value="$PROJECT_DIR$/jmoo_properties.py" />
         <option value="$PROJECT_DIR$/FuzzyPareto/demo.py" />
+        <option value="$PROJECT_DIR$/DE/de_components.py" />
+        <option value="$PROJECT_DIR$/GALE/gale_components.py" />
+        <option value="$PROJECT_DIR$/joes_moo_charter.py" />
+        <option value="$PROJECT_DIR$/jmoo_algorithms.py" />
+        <option value="$PROJECT_DIR$/jmoo_properties.py" />
       </list>
     </option>
   </component>
@@ -228,6 +279,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FuzzyPareto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,11 +518,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="808" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3098782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3098782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -733,23 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/joes_moo_charter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2053" max-vertical-offset="3780">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/joes_stats_suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1144" max-vertical-offset="3285">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding>
-            <element signature="e#1064#1083#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_stats_box.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1294" max-vertical-offset="3255">
@@ -757,13 +805,6 @@
           <folding>
             <element signature="e#1092#1103#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DE/de_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1710">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -814,24 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jmoo_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="1575">
-          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-          <folding>
-            <element signature="e#1064#1093#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jmoo_problem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1695">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_decision.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="268" max-vertical-offset="750">
@@ -848,34 +871,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FuzzyPareto/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.185185" vertical-offset="2245" max-vertical-offset="2880">
+          <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jmoo_problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1695">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="e#1085#1114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DE/de_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2222223" vertical-offset="320" max-vertical-offset="1695">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joes_stats_suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="3150">
+          <caret line="129" column="39" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GALE/gale_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="2580">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1858" max-vertical-offset="3285">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joes_moo_charter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.925926" vertical-offset="719" max-vertical-offset="3810">
+          <caret line="154" column="76" selection-start-line="154" selection-start-column="71" selection-end-line="154" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jmoo_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="1575">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+          <folding>
+            <element signature="e#1064#1093#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="4425">
-          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1063" max-vertical-offset="4575">
+          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1335">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FuzzyPareto/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4065934" vertical-offset="2245" max-vertical-offset="2880">
-          <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.93775934" vertical-offset="418" max-vertical-offset="1350">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding />
         </state>
       </provider>

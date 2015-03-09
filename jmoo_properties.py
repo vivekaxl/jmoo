@@ -34,21 +34,22 @@ from jmoo_problems import *
 # JMOO Experimental Definitions
 algorithms = [
               
-              MOEAS.jmoo_NSGAII(),
-              MOEAS.jmoo_GALE(),
+              #MOEAS.jmoo_NSGAII(),
+              MOEAS. jmoo_GALE2_1(),
+              MOEAS. jmoo_GALE(),
               #MOEAS.jmoo_SPEA2(),
               MOEAS.jmoo_DE()
               
               ]
 
 problems = [
-            dtlz1()
-            #fonseca(3),
+            #dtlz1()
+            fonseca(3),
             #zdt1()
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
              #osyczka2(),
-            #viennet2(), tanaka(), schaffer(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
+            viennet2(), tanaka(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
@@ -56,7 +57,7 @@ build_new_pop = False                                       # Whether or not to 
 
 
 # JMOO Universal Properties
-repeats = 10    #Repeats of each MOEA
+repeats = 3    #Repeats of each MOEA
 MU      = 100   #Population Size
 PSI     = 20    #Maximum number of generations
 

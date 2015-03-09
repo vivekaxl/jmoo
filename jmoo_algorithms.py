@@ -90,6 +90,16 @@ class jmoo_DE:
         self.color = color
         self.type = '+'
 
+class jmoo_GALE2_1:
+    def __init__(self, color="Blue"):
+        self.name = "GALE2_1"
+        self.selector = galeWHERE #return all non dominated leaves and  number of evaluations
+        self.adjustor = galeMutate
+        self.recombiner = galeRegen2
+        self.color = color
+        self.type = '^'
+
+
 
 class Bin:
     def __init__(self):

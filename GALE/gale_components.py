@@ -16,7 +16,7 @@
     along with GALE.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import os,sys,inspect
+import os, sys, inspect, random
 
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe()))[0],"fastmap")))
 if cmd_subfolder not in sys.path:
@@ -26,6 +26,11 @@ from Slurp import *
 from Moo import * 
 from jmoo_individual import *
 
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
+import jmoo_properties
 
 def galeWHERE(problem, population):
     "The Core method behind GALE"
@@ -134,7 +139,7 @@ def galeMutate(problem, NDLeafs):
             x    = (a**2 + row.c**2 - b**2) / (2*row.c+0.00001)
             
             #Test Mutant for Acceptance
-            GAMMA = 4.5#0.15 #note: make this a property #Vivek: I think this should not be here
+            GAMMA = 0.15 #note: make this a property #Vivek: I think this should not be here
             
             #print abs(cx-x), (cx + (g * GAMMA))
             if abs(x-cx) > (g * GAMMA) or problem.evalConstraints(row.cells[:n]): #reject it
@@ -163,4 +168,47 @@ def galeRegen(problem, unusedSlot, mutants, MU):
     for i in range(howMany):
         population.append(jmoo_individual(problem, problem.generateInput(), None))
     
+    return mutants+population, 0
+
+
+def galeRegen2(problem, unusedSlot, mutants, MU):
+    def trim(mutated, low, up):
+        return max(low, min(mutated, up))
+
+    def three_others(individuals, one):
+        seen = [one]
+
+        def other():
+            while True:
+                random_selection = random.randint(0, len(individuals) - 1)
+                if individuals[random_selection] not in seen:
+                    seen.append(individuals[random_selection])
+                    break
+            return individuals[random_selection]
+
+        return other(), other(), other()
+
+    def extrapolate(problem, individuals, f, cf):
+        # #print "Extrapolate"
+        one = individuals[random.randint(0, len(individuals)-1)]
+        two, three, four = three_others(individuals, one)
+        solution = []
+        for d, decision in enumerate(problem.decisions):
+            assert isinstance(two, jmoo_individual)
+            x, y, z = two.decisionValues[d], three.decisionValues[d], four.decisionValues[d]
+            if random.random() < cf:
+                mutated = x + f * (y - z)
+                solution.append(trim(mutated, decision.low, decision.up))
+            else:
+                solution.append(one.decisionValues[d])
+        return jmoo_individual(problem, [float(d) for d in solution], None)
+
+
+    howMany = MU - len(mutants)
+
+    # Generate random individuals
+    population = []
+    for i in range(howMany):
+        population.append(extrapolate(problem, mutants, jmoo_properties.F, jmoo_properties.CF ))
+
     return mutants+population, 0

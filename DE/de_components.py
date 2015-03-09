@@ -6,7 +6,6 @@ import random
 from jmoo_individual import *
 from jmoo_algorithms import *
 from jmoo_stats_box import *
-from jmoo_properties import *
 
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))

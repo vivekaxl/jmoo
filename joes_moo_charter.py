@@ -154,8 +154,10 @@ def joes_charter_reporter(problems, algorithms, tag=""):
             n = len(prob.decisions)
             population = [jmoo_individual(prob, f[:n], f[n:]) for f in final[p][a]]
             population = deap_format(prob, population)
+            print "Length of population: ", len(population)
             front = ParetoFront()
             front.update(population)
+            print len(front)
             d_ = []
             for i,fit_i in enumerate(front):
                 fma = []
