@@ -303,6 +303,49 @@ class zdt1(jmoo_problem):
     def evalConstraints(prob,input = None):
         return False #no constraints
 
+class dtlz1(jmoo_problem):
+    "DTLZ1"
+    def __init__(prob, objf=5, n=20, k=16):
+        prob.name = "DTLZ1"
+        prob.objf = objf
+        prob.n = n
+        prob.k = k
+        names = ["x" + str(i+1) for i in range(prob.n)]
+        prob.decisions = [jmoo_decision(names[i], 0, 1) for i in range(len(names))]
+        prob.objectives = [jmoo_objective("f1", True), jmoo_objective("f2", True), jmoo_objective("f3", True), jmoo_objective("f4", True), jmoo_objective("f5", True)]
+
+    def evaluate(prob, input=None):
+        listpoints = [decision.value for decision in prob.decisions]
+        prob.objectives[0].value = prob.fi(listpoints, 0)
+        prob.objectives[1].value = prob.fi(listpoints, 1)
+        prob.objectives[2].value = prob.fi(listpoints, 2)
+        prob.objectives[3].value = prob.fi(listpoints, 3)
+        prob.objectives[4].value = prob.fi(listpoints, 4)
+        return [objective.value for objective in prob.objectives]
+
+
+    def g(prob, listpoints):
+        def temp(num):
+            return (num - 0.5)**2 - math.cos(20*math.pi*(num-0.5))
+        listpoints = [decision.value for decision in prob.decisions]
+        summ = sum([temp(x) for x in listpoints])
+        return 100 * (abs(listpoints[-1]) + summ)
+
+    def fi(prob, listpoints, num):
+        def prod(listpoints):
+            p=1
+            for x in listpoints:
+                p *= x
+            return p
+        if num == 1:
+            return 0.5 * prod(listpoints[:-1]) * (1+prob.g(listpoints))
+        else:
+            return 0.5 * prod(listpoints[:-num]) * (1-listpoints[-num+1]) * (1+prob.g(listpoints))
+
+    def evalConstraints(prob, input=None):
+        return False  # no constraints
+
+
 class zdt2(jmoo_problem):
     "ZDT2"
     def __init__(prob):

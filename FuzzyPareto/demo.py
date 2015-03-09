@@ -51,6 +51,9 @@ class DominanceRelation:
         phi_u = LeftGaussianFunction(perf_u).do_it()
         phi_v = LeftGaussianFunction(perf_v).do_it()
 
+        # print "phi_u: ", phi_u
+        # print "phi_v: ", phi_v
+
         # Fuzzy Product Value: Product of all the elements of a list
         from operator import mul
         i.product_u = reduce(mul, phi_u, 1)
@@ -101,6 +104,7 @@ def better2(problem,individual,mutant):
 
 def better(old, new):
     assert (len(old) == len(new)), "Length mismatch"
+
     for o, n in zip(old, new):
         if o <= n:
             pass
@@ -112,12 +116,14 @@ def better(old, new):
 def fast_domination_sort(problem, population):
     non_dominated = []
     for p in population:
+        #print "Length of population: ---------------------------- ", len(population)
         count = 0
         for q in population:
             if p != q:  # don't compare p with q
-                if better(q.fitness.fitness, p.fitness.fitness):
+                if better(q.fitness.fitness, p.fitness.fitness) is True:
                     count += 1
         if count == 0:
+            #print ">>>>>>>>>>>>>Fitness: ", p.fitness.fitness, count
             non_dominated.append(p)
     print "Length of the non_dominated: ", len(non_dominated)
     return non_dominated
@@ -151,7 +157,8 @@ def baseline(problem, population):
 
 
 def try_it():
-    #random.seed(4)
+    alpha = 0.5
+    random.seed(4)
     problem = zdt1()
     population = generate_population(problem, 100)
     population = baseline(problem, population)
@@ -159,17 +166,20 @@ def try_it():
         individual = population[i]
         individual.FFM = fuzzy_fitness_measurement(individual, population[:i]+population[i:])
 
-    for pop in fast_domination_sort(problem, population):
-        print pop.FFM
+    traditional = fast_domination_sort(problem, population)
+    print "Number of non-dominated solutions (traditional style): ", len(traditional)
+    # for pop in traditional: # Traditional pareto dominance
+    #     print pop.index, pop.FFM
 
-    print max(pop.FFM for pop in population)
 
-    print sorted([p.FFM for p in population])
+    fuzzy = [pop for pop in population if pop.FFM > alpha]
+    print "Number of fuzzy non-dominated solution: ", len(fuzzy)
+    # for pop in fuzzy:
+    #         print pop.index, pop.fitness.fitness
 
 
     #what I am trying to do here is to find whether fuzzy pareto actuall works. The easiest way to check difference is
     #to find a set of non dominated solutions and then find the fuzzy score.
-
 
 
 
