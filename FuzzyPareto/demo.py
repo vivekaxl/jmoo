@@ -159,8 +159,8 @@ def baseline(problem, population):
 def try_it():
     alpha = 0.5
     random.seed(4)
-    problem = zdt1()
-    population = generate_population(problem, 100)
+    problem = dtlz1()
+    population = generate_population(problem, 1000)
     population = baseline(problem, population)
     for i in xrange(len(population)):
         individual = population[i]

@@ -315,6 +315,10 @@ class dtlz1(jmoo_problem):
         prob.objectives = [jmoo_objective("f1", True), jmoo_objective("f2", True), jmoo_objective("f3", True), jmoo_objective("f4", True), jmoo_objective("f5", True)]
 
     def evaluate(prob, input=None):
+        if input:
+            for i,decision in enumerate(prob.decisions):
+                decision.value = input[i]
+
         listpoints = [decision.value for decision in prob.decisions]
         prob.objectives[0].value = prob.fi(listpoints, 0)
         prob.objectives[1].value = prob.fi(listpoints, 1)

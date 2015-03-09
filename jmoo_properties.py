@@ -36,7 +36,7 @@ algorithms = [
               
               MOEAS.jmoo_NSGAII(),
               MOEAS.jmoo_GALE(),
-              MOEAS.jmoo_SPEA2(),
+              #MOEAS.jmoo_SPEA2(),
               MOEAS.jmoo_DE()
               
               ]
