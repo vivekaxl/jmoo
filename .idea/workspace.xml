@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="307e3a3d-ec87-4f54-8ad8-0504ec602ed7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExperimentRecords.xml" afterPath="$PROJECT_DIR$/ExperimentRecords.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FuzzyPareto/demo.py" afterPath="$PROJECT_DIR$/FuzzyPareto/demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GALE/gale_components.py" afterPath="$PROJECT_DIR$/GALE/gale_components.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_problems.py" afterPath="$PROJECT_DIR$/jmoo_problems.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_properties.py" afterPath="$PROJECT_DIR$/jmoo_properties.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_.datatable" afterPath="$PROJECT_DIR$/data/summary_.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jmoo.iws" />
@@ -448,7 +442,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425880885107</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added dtlz1 model and changes to fuzzy stuff">
+      <created>1425924112702</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1425924112702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
