@@ -2,121 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="307e3a3d-ec87-4f54-8ad8-0504ec602ed7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/DTLZ1100dataset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Osyczka2100dataset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__DTLZ1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Osyczka2_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Osyczka2_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Osyczka2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Osyczka2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Schaffer_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__ZDT1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__ZDT1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__ZDT1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RRS_TABLE__ZDT1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Schaffer100dataset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/ZDT1100dataset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_DTLZ1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Osyczka2_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Osyczka2_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Osyczka2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Osyczka2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Schaffer_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_ZDT1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_ZDT1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_ZDT1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/decision_bin_table_ZDT1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_DTLZ1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_DTLZ1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_DTLZ1_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_DTLZ1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_DTLZ1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Golinski_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Golinski_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Golinski_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Osyczka2_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Osyczka2_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Osyczka2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Osyczka2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Schaffer_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Schaffer_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Schaffer_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Schaffer_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Schaffer_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Tanaka_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Tanaka_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Viennet2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_Viennet2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_ZDT1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_ZDT1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_ZDT1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/results_ZDT1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_DTLZ1_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Golinski_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Golinski_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Golinski_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Osyczka2_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Osyczka2_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Osyczka2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Osyczka2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Schaffer_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Schaffer_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Schaffer_GALE2_1.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Schaffer_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Schaffer_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Tanaka_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Tanaka_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Viennet2_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_Viennet2_SPEA2.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_ZDT1_DE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_ZDT1_GALE.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_ZDT1_NSGAII.datatable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/summary_ZDT1_SPEA2.datatable" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GALE/fastmap/Moo2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExperimentRecords.xml" afterPath="$PROJECT_DIR$/ExperimentRecords.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Fonseca100dataset.txt" afterPath="$PROJECT_DIR$/data/Fonseca100dataset.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Golinski100dataset.txt" afterPath="$PROJECT_DIR$/data/Golinski100dataset.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Fonseca_GALE2_1.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Golinski_GALE2_1.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Tanaka_GALE2_1.datatable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/RRS_TABLE__Viennet2_GALE2_1.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Tanaka100dataset.txt" afterPath="$PROJECT_DIR$/data/Tanaka100dataset.txt" />
@@ -124,18 +22,22 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Fonseca_GALE2_1.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Golinski_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Golinski_GALE2_1.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Tanaka_GALE2_1.datatable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_DE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/decision_bin_table_Viennet2_GALE2_1.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GALE/gale_components.py" afterPath="$PROJECT_DIR$/GALE/gale_components.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_algorithms.py" afterPath="$PROJECT_DIR$/jmoo_algorithms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_jmoea.py" afterPath="$PROJECT_DIR$/jmoo_jmoea.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jmoo_properties.py" afterPath="$PROJECT_DIR$/jmoo_properties.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Fonseca_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Fonseca_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Fonseca_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Fonseca_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Fonseca_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/results_Fonseca_GALE2_1.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Golinski_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/results_Golinski_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Golinski_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/results_Golinski_GALE2_1.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/results_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/results_Tanaka_DE.datatable" />
@@ -148,6 +50,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Fonseca_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Fonseca_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Fonseca_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Fonseca_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Fonseca_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/summary_Fonseca_GALE2_1.datatable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Golinski_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Golinski_DE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Golinski_GALE.datatable" afterPath="$PROJECT_DIR$/data/summary_Golinski_GALE.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Golinski_GALE2_1.datatable" afterPath="$PROJECT_DIR$/data/summary_Golinski_GALE2_1.datatable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/summary_Tanaka_DE.datatable" afterPath="$PROJECT_DIR$/data/summary_Tanaka_DE.datatable" />
@@ -181,10 +84,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="jmoo_algorithms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jmoo_algorithms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="4575">
+              <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="jmoo_interface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jmoo_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1575">
+            <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1575">
               <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding>
                 <element signature="e#1064#1093#0" expanded="true" />
@@ -193,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmoo_properties.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jmoo_properties.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jmoo_properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7332215" vertical-offset="313" max-vertical-offset="1350">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="1350">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -223,64 +136,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmoo_decision.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_decision.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="795">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gale_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GALE/gale_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="3285">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="3690">
+              <caret line="79" column="15" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmoo_core.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_core.py">
+      <file leaf-file-name="Moo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GALE/fastmap/Moo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1295" max-vertical-offset="3090">
-              <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2835">
+              <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmoo_jmoea.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_jmoea.py">
+      <file leaf-file-name="Moo2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GALE/fastmap/Moo2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="3105">
-              <caret line="90" column="75" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jmoo_individual.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_individual.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="885">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jmoo_problem.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jmoo_problem.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="402" max-vertical-offset="1710">
-              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-              <folding>
-                <element signature="e#1085#1114#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -306,10 +187,10 @@
         <option value="$PROJECT_DIR$/FuzzyPareto/demo.py" />
         <option value="$PROJECT_DIR$/DE/de_components.py" />
         <option value="$PROJECT_DIR$/joes_moo_charter.py" />
-        <option value="$PROJECT_DIR$/jmoo_algorithms.py" />
-        <option value="$PROJECT_DIR$/GALE/gale_components.py" />
         <option value="$PROJECT_DIR$/jmoo_decision.py" />
         <option value="$PROJECT_DIR$/GALE/fastmap/Slurp.py" />
+        <option value="$PROJECT_DIR$/jmoo_algorithms.py" />
+        <option value="$PROJECT_DIR$/GALE/gale_components.py" />
         <option value="$PROJECT_DIR$/jmoo_jmoea.py" />
         <option value="$PROJECT_DIR$/jmoo_properties.py" />
       </list>
@@ -656,11 +537,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26846424" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26846424" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -752,45 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/About.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4008439" vertical-offset="0" max-vertical-offset="711">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Sym.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.443038" vertical-offset="0" max-vertical-offset="855">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Num.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GALE/fastmap/spec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6751055" vertical-offset="0" max-vertical-offset="711">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/BinaryTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="825">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Row.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -805,13 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.707483" vertical-offset="312" max-vertical-offset="6675">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Moo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.95532644" vertical-offset="1576" max-vertical-offset="2835">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -980,14 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jmoo_algorithms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="4575">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/joes_stats_suite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15436241" vertical-offset="1708" max-vertical-offset="3150">
@@ -1003,14 +834,6 @@
           <folding>
             <element signature="e#1085#1114#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GALE/gale_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="3285">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,17 +877,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Sym.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33221477" vertical-offset="222" max-vertical-offset="855">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/About.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6728188" vertical-offset="19" max-vertical-offset="615">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33221477" vertical-offset="297" max-vertical-offset="1140">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1125">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/BinaryTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.295302" vertical-offset="229" max-vertical-offset="825">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jmoo_algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="4575">
+          <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_jmoea.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="3105">
-          <caret line="90" column="75" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="3105">
+          <caret line="81" column="51" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jmoo_properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="1350">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jmoo_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="1575">
+        <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1575">
           <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
             <element signature="e#1064#1093#0" expanded="true" />
@@ -1072,10 +951,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jmoo_properties.py">
+    <entry file="file://$PROJECT_DIR$/GALE/gale_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7332215" vertical-offset="313" max-vertical-offset="1350">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="3690">
+          <caret line="79" column="15" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Moo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2835">
+          <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GALE/fastmap/Moo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

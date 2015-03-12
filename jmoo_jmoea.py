@@ -79,7 +79,7 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
         # # # # # # # # #
         # 4a) Selection #
         # # # # # # # # #
-        if algorithm.name == "GALE2_1":
+        if algorithm.name == "GALE2_1" and gen == 1:
             # use the initial population to build classes
             for pop in population:
                 pop.fitness = problem.evaluate(pop.decisionValues)

@@ -59,7 +59,34 @@ def galeWHERE(problem, population):
                 numEval += 1
                 
     return NDLeafs, numEval
-    
+
+def galeWHERE2(problem, population):
+    "The Core method behind GALE"
+
+    # Compile population into table form used by WHERE
+    t = slurp([[x for x in row.decisionValues] + ["?" for y in problem.objectives] for row in population], problem.buildHeader().split(","))
+
+    # Initialize some parameters for WHERE
+    The.allowDomination = True
+    The.alpha = 1
+    for i,row in enumerate(t.rows):
+        row.evaluated = False
+
+    # Run WHERE
+    m = Moo(problem, t, len(t.rows), N=1).divide(minnie=rstop(t))
+
+    # Organizing
+    NDLeafs = m.nonPrunedLeaves()                       # The surviving non-dominated leafs
+    allLeafs = m.nonPrunedLeaves() + m.prunedLeaves()   # All of the leafs
+
+    # After mutation: Check how many rows were actually evaluated
+    numEval = 0
+    for leaf in allLeafs:
+        for row in leaf.table.rows:
+            if row.evaluated:
+                numEval += 1
+
+    return NDLeafs, numEval
       
      
 def galeMutate(problem, NDLeafs):

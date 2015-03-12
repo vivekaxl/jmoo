@@ -95,7 +95,7 @@ class jmoo_GALE2_1:
         self.name = "GALE2_1"
         self.selector = galeWHERE #return all non dominated leaves and  number of evaluations
         self.adjustor = galeMutate
-        self.recombiner = galeRegen2
+        self.recombiner = galeRegen
         self.color = color
         self.type = '^'
 

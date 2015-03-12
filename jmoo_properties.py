@@ -44,12 +44,12 @@ algorithms = [
 
 problems = [
             #dtlz1()
-            fonseca(3),
+            fonseca(3)#,
             #zdt1()
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
              #osyczka2(),
-            viennet2(), tanaka(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
+            #viennet2()#, tanaka()#, golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
@@ -57,7 +57,7 @@ build_new_pop = False                                       # Whether or not to 
 
 
 # JMOO Universal Properties
-repeats = 3    #Repeats of each MOEA
+repeats = 10    #Repeats of each MOEA
 MU      = 100   #Population Size
 PSI     = 20    #Maximum number of generations
 
