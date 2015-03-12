@@ -3,88 +3,364 @@
 <Algorithm name = 'GALE2_1'>
 <Run id = '1'>
 <Summary>
-<NumEvals>27</NumEvals>
-<RunTime>0.784780025482</RunTime>
-<IBD>0.606531910022</IBD>
+<NumEvals>24</NumEvals>
+<RunTime>0.571176052094</RunTime>
+<IBD>0.60653239515</IBD>
 <IBS>0.0</IBS>
-<f1>0.625200792549</f1>
-<f2>0.808085449111</f2>
+<f1>0.889884178489</f1>
+<f2>0.272370712821</f2>
 </Summary></Run>
 <Run id = '2'>
 <Summary>
-<NumEvals>25</NumEvals>
-<RunTime>2.12050890923</RunTime>
-<IBD>0.606532422097</IBD>
-<IBS>0.0</IBS>
-<f1>0.369308280693</f1>
-<f2>0.890210517665</f2>
+<NumEvals>22</NumEvals>
+<RunTime>0.653301954269</RunTime>
+<IBD>0.885906435428</IBD>
+<IBS>0.0205907997277</IBS>
+<f1>0.999775887831</f1>
+<f2>0.887441143307</f2>
 </Summary></Run>
 <Run id = '3'>
 <Summary>
-<NumEvals>17</NumEvals>
-<RunTime>2.16322088242</RunTime>
-<IBD>0.886807642556</IBD>
+<NumEvals>44</NumEvals>
+<RunTime>0.83140707016</RunTime>
+<IBD>0.60653189146</IBD>
 <IBS>0.0</IBS>
-<f1>0.664747254176</f1>
-<f2>0.999872423995</f2>
+<f1>0.835605571343</f1>
+<f2>0.373710358151</f2>
 </Summary></Run>
 </Algorithm>
 <Algorithm name = 'GALE'>
 <Run id = '1'>
 <Summary>
-<NumEvals>24</NumEvals>
-<RunTime>1.99705386162</RunTime>
-<IBD>0.886809303125</IBD>
+<NumEvals>26</NumEvals>
+<RunTime>1.79670095444</RunTime>
+<IBD>0.606531690115</IBD>
 <IBS>0.0</IBS>
-<f1>0.999873417499</f1>
-<f2>0.628999069495</f2>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
 </Summary></Run>
 <Run id = '2'>
 <Summary>
-<NumEvals>13</NumEvals>
-<RunTime>0.837857961655</RunTime>
-<IBD>0.723281627233</IBD>
-<IBS>0.0361214412554</IBS>
-<f1>0.812537105024</f1>
-<f2>0.718542259303</f2>
+<NumEvals>25</NumEvals>
+<RunTime>1.85297083855</RunTime>
+<IBD>0.606531690115</IBD>
+<IBS>0.0</IBS>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
 </Summary></Run>
 <Run id = '3'>
 <Summary>
-<NumEvals>24</NumEvals>
-<RunTime>2.00266098976</RunTime>
-<IBD>0.886809303125</IBD>
+<NumEvals>27</NumEvals>
+<RunTime>1.73919701576</RunTime>
+<IBD>0.606531690115</IBD>
 <IBS>0.0</IBS>
-<f1>0.999873417499</f1>
-<f2>0.628999069495</f2>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
 </Summary></Run>
 </Algorithm>
 <Algorithm name = 'DE'>
 <Run id = '1'>
 <Summary>
-<NumEvals>3200</NumEvals>
-<RunTime>0.260869026184</RunTime>
-<IBD>0.892531226942</IBD>
-<IBS>0.0351028777152</IBS>
-<f1>0.999838533246</f1>
-<f2>0.628999069495</f2>
+<NumEvals>2800</NumEvals>
+<RunTime>0.22416305542</RunTime>
+<IBD>0.805608938712</IBD>
+<IBS>0.0</IBS>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
 </Summary></Run>
 <Run id = '2'>
 <Summary>
-<NumEvals>2400</NumEvals>
-<RunTime>0.24396109581</RunTime>
-<IBD>0.892153673063</IBD>
-<IBS>0.0372165859212</IBS>
-<f1>0.999429401211</f1>
-<f2>0.628999069495</f2>
+<NumEvals>2600</NumEvals>
+<RunTime>0.225178956985</RunTime>
+<IBD>0.805608938712</IBD>
+<IBS>0.0</IBS>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
 </Summary></Run>
 <Run id = '3'>
 <Summary>
-<NumEvals>3600</NumEvals>
-<RunTime>0.23756313324</RunTime>
-<IBD>0.88207491468</IBD>
-<IBS>0.0423780688284</IBS>
-<f1>0.999513936244</f1>
-<f2>0.628999069495</f2>
+<NumEvals>2600</NumEvals>
+<RunTime>0.265768051147</RunTime>
+<IBD>0.805608938712</IBD>
+<IBS>0.0</IBS>
+<f1>0.789765670085</f1>
+<f2>0.431232049727</f2>
+</Summary></Run>
+</Algorithm>
+</Problem>
+<Problem name = 'Viennet2'>
+<Algorithm name = 'GALE2_1'>
+<Run id = '1'>
+<Summary>
+<NumEvals>18</NumEvals>
+<RunTime>0.428564071655</RunTime>
+<IBD>0.716531553343</IBD>
+<IBS>0.0</IBS>
+<f1>3.13754281302</f1>
+<f2>-16.8384933733</f2>
+<f3>-12.4261299834</f3>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>41</NumEvals>
+<RunTime>0.575500965118</RunTime>
+<IBD>0.716531570856</IBD>
+<IBS>0.0</IBS>
+<f1>4.11616179444</f1>
+<f2>-16.6243413593</f2>
+<f3>-12.5454491026</f3>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>21</NumEvals>
+<RunTime>0.459063053131</RunTime>
+<IBD>0.716531509999</IBD>
+<IBS>0.0</IBS>
+<f1>3.62763351187</f1>
+<f2>-16.7341719783</f2>
+<f3>-12.8001420085</f3>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'GALE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>31</NumEvals>
+<RunTime>0.424316883087</RunTime>
+<IBD>0.94367979038</IBD>
+<IBS>0.12925617125</IBS>
+<f1>8.61591449485</f1>
+<f2>-15.7055189609</f2>
+<f3>-12.2730092224</f3>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>7</NumEvals>
+<RunTime>0.196774959564</RunTime>
+<IBD>0.748406994192</IBD>
+<IBS>0.0231235417932</IBS>
+<f1>3.91204250088</f1>
+<f2>-16.5016884572</f2>
+<f3>-12.636947554</f3>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>8</NumEvals>
+<RunTime>0.51026892662</RunTime>
+<IBD>0.861685623007</IBD>
+<IBS>0.108045671373</IBS>
+<f1>4.53053300334</f1>
+<f2>-15.950327788</f2>
+<f3>-11.6767996588</f3>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'DE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>0</NumEvals>
+<RunTime>0.251503944397</RunTime>
+<IBD>1.0</IBD>
+<IBS>0</IBS>
+<f1>0</f1>
+<f2>0</f2>
+<f3>0</f3>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>0</NumEvals>
+<RunTime>0.255434989929</RunTime>
+<IBD>1.0</IBD>
+<IBS>0</IBS>
+<f1>0</f1>
+<f2>0</f2>
+<f3>0</f3>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>0</NumEvals>
+<RunTime>0.228910207748</RunTime>
+<IBD>1.0</IBD>
+<IBS>0</IBS>
+<f1>0</f1>
+<f2>0</f2>
+<f3>0</f3>
+</Summary></Run>
+</Algorithm>
+</Problem>
+<Problem name = 'Tanaka'>
+<Algorithm name = 'GALE2_1'>
+<Run id = '1'>
+<Summary>
+<NumEvals>7</NumEvals>
+<RunTime>1.35993909836</RunTime>
+<IBD>0.856827984125</IBD>
+<IBS>0.0459338792438</IBS>
+<f1>1.04486970223</f1>
+<f2>0.120963836128</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>30</NumEvals>
+<RunTime>1.24916315079</RunTime>
+<IBD>0.88681754086</IBD>
+<IBS>0.030022978546</IBS>
+<f1>0.930997642552</f1>
+<f2>0.0559044695165</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>14</NumEvals>
+<RunTime>1.76752495766</RunTime>
+<IBD>0.80688777769</IBD>
+<IBS>0.0399654340755</IBS>
+<f1>0.930997642552</f1>
+<f2>0.0559044695165</f2>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'GALE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>8</NumEvals>
+<RunTime>0.431369066238</RunTime>
+<IBD>0.891661917345</IBD>
+<IBS>0.0752178394513</IBS>
+<f1>1.04449524638</f1>
+<f2>0.155587055878</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>6</NumEvals>
+<RunTime>0.239161014557</RunTime>
+<IBD>0.856827984125</IBD>
+<IBS>0.0459338792438</IBS>
+<f1>1.04486970223</f1>
+<f2>0.120963836128</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>7</NumEvals>
+<RunTime>0.351082086563</RunTime>
+<IBD>0.895771187679</IBD>
+<IBS>0.0089525418376</IBS>
+<f1>1.02256322208</f1>
+<f2>0.116400655676</f2>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'DE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>3000</NumEvals>
+<RunTime>0.461826086044</RunTime>
+<IBD>0.931422248072</IBD>
+<IBS>0.0897683098288</IBS>
+<f1>0.803739651968</f1>
+<f2>0.859520768287</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>1800</NumEvals>
+<RunTime>0.22819185257</RunTime>
+<IBD>0.940302378541</IBD>
+<IBS>0.0964699866596</IBS>
+<f1>0.822265365314</f1>
+<f2>0.87087643871</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>3200</NumEvals>
+<RunTime>0.253341913223</RunTime>
+<IBD>0.932816532121</IBD>
+<IBS>0.10891792826</IBS>
+<f1>0.809816674398</f1>
+<f2>0.859520768287</f2>
+</Summary></Run>
+</Algorithm>
+</Problem>
+<Problem name = 'Golinski'>
+<Algorithm name = 'GALE2_1'>
+<Run id = '1'>
+<Summary>
+<NumEvals>41</NumEvals>
+<RunTime>1.5894780159</RunTime>
+<IBD>0.606530660332</IBD>
+<IBS>0.00959231823467</IBS>
+<f1>2079.34976898</f1>
+<f2>764.92144069</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>60</NumEvals>
+<RunTime>1.19068384171</RunTime>
+<IBD>0.606530660246</IBD>
+<IBS>0.0297559212056</IBS>
+<f1>642.101045199</f1>
+<f2>733.946570804</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>16</NumEvals>
+<RunTime>3.26465606689</RunTime>
+<IBD>0.653701089404</IBD>
+<IBS>0.0421397534243</IBS>
+<f1>3914.91774076</f1>
+<f2>726.03693082</f2>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'GALE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>9</NumEvals>
+<RunTime>4.19357705116</RunTime>
+<IBD>0.825556150889</IBD>
+<IBS>0.0714819247353</IBS>
+<f1>5011.21185127</f1>
+<f2>755.224112503</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>9</NumEvals>
+<RunTime>3.27890610695</RunTime>
+<IBD>0.816671220089</IBD>
+<IBS>0.0904388307288</IBS>
+<f1>3687.15999859</f1>
+<f2>777.868264964</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>16</NumEvals>
+<RunTime>3.08384203911</RunTime>
+<IBD>0.841739312674</IBD>
+<IBS>0.00274471751805</IBS>
+<f1>2152.08305533</f1>
+<f2>1127.17188746</f2>
+</Summary></Run>
+</Algorithm>
+<Algorithm name = 'DE'>
+<Run id = '1'>
+<Summary>
+<NumEvals>4000</NumEvals>
+<RunTime>0.219861984253</RunTime>
+<IBD>0.80255652361</IBD>
+<IBS>0.0934397766209</IBS>
+<f1>628.691276954</f1>
+<f2>1119.79925443</f2>
+</Summary></Run>
+<Run id = '2'>
+<Summary>
+<NumEvals>3800</NumEvals>
+<RunTime>0.262943983078</RunTime>
+<IBD>0.804471758303</IBD>
+<IBS>0.0843116328919</IBS>
+<f1>833.116113595</f1>
+<f2>1116.31603529</f2>
+</Summary></Run>
+<Run id = '3'>
+<Summary>
+<NumEvals>3800</NumEvals>
+<RunTime>0.208408117294</RunTime>
+<IBD>0.79103763595</IBD>
+<IBS>0.0850683086432</IBS>
+<f1>1080.24433651</f1>
+<f2>1084.4186924</f2>
 </Summary></Run>
 </Algorithm>
 </Problem>

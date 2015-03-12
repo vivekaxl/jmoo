@@ -49,7 +49,7 @@ problems = [
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
              #osyczka2(),
-            #viennet2(), tanaka(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
+            viennet2(), tanaka(), golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
