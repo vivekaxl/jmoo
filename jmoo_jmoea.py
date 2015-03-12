@@ -79,10 +79,28 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
         # # # # # # # # #
         # 4a) Selection #
         # # # # # # # # #
-            
+        if algorithm.name == "GALE2_1":
+            # use the initial population to build classes
+            for pop in population:
+                pop.fitness = problem.evaluate(pop.decisionValues)
+            high = -1e6
+            constraints = []
+            for x in xrange(len(problem.decisions)):
+                for e,d in enumerate(sdiv2(population, cohen=0.3, num1=lambda y: y.decisionValues[x], num2=lambda y: min(y.fitness))):
+                    temp = sorted([y.decisionValues[x] for y in d[-1]])
+                    mean =  sum([min(y.fitness) for y in d[-1]])/len(d[-1])
+                    if mean > high:
+                        const1 = temp[0]
+                        const2 = temp[-1]
+                        high = mean
+                problem.decisions[x].low = const1
+                problem.decisions[x].up = const2
+            # read the data from population
+            # run sdiv get constraints and input it in the problem. There is a problem with upper limit
+
             
         problem.referencePoint = statBox.referencePoint
-        selectees,evals = algorithm.selector(problem,population)
+        selectees,evals = algorithm.selector(problem, population)
         numNewEvals = evals
         
         
@@ -121,3 +139,67 @@ def jmoo_evo(problem, algorithm, toStop = bstop):
 
     #return the representative generation
     return statBox
+
+
+def sdiv2(lst, tiny=3, cohen=0.3, num1=lambda x: x[0], num2=lambda x: x[1]):
+        "Divide lst of (num1,num2) using variance of num2."
+        #----------------------------------------------
+        class Counts():  # Add/delete counts of numbers.
+            def __init__(i, inits=[]):
+                i.zero()
+                for number in inits: i + number
+
+            def zero(i):
+                i.n = i.mu = i.m2 = 0.0
+
+            def sd(i):
+                if i.n < 2:
+                    return i.mu
+                else:
+                    return (max(0, i.m2) * 1.0 / (i.n - 1)) ** 0.5
+
+            def __add__(i, x):
+                i.n += 1
+                delta = x - i.mu
+                i.mu += delta / (1.0 * i.n)
+                i.m2 += delta * (x - i.mu)
+
+            def __sub__(i, x):
+                if i.n < 2: return i.zero()
+                i.n -= 1
+                delta = x - i.mu
+                i.mu -= delta / (1.0 * i.n)
+                i.m2 -= delta * (x - i.mu)
+                #----------------------------------------------
+
+        def divide(this, small):  #Find best divide of 'this'
+            lhs, rhs = Counts(), Counts(num2(x) for x in this)
+            n0, least, cut = 1.0 * rhs.n, rhs.sd(), None
+            for j, x in enumerate(this):
+                if lhs.n > tiny and rhs.n > tiny:
+                    maybe = lhs.n / n0 * lhs.sd() + rhs.n / n0 * rhs.sd()
+                    if maybe < least:
+                        if abs(lhs.mu - rhs.mu) >= small:  # where's the paper for this method?
+                            cut, least = j, maybe
+                rhs - num2(x)
+                lhs + num2(x)
+            return cut, least
+
+        #----------------------------------------------
+        def recurse(this, small, cuts):
+            #print this,small
+            cut, sd = divide(this, small)
+            if cut:
+                recurse(this[:cut], small, cuts)
+                recurse(this[cut:], small, cuts)
+            else:
+                cuts += [(sd, this)]
+            return cuts
+
+        #---| main |-----------------------------------
+        # for x in lst:
+        #   print num2(x)
+        small = Counts(num2(x) for x in lst).sd() * cohen  # why we use a cohen??? how to choose cohen
+        if lst:
+            return recurse(sorted(lst, key=num1), small, [])
+

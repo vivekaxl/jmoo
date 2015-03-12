@@ -37,7 +37,7 @@ def galeWHERE(problem, population):
     
     # Compile population into table form used by WHERE
     t = slurp([[x for x in row.decisionValues] + ["?" for y in problem.objectives] for row in population], problem.buildHeader().split(","))
-    
+
     # Initialize some parameters for WHERE
     The.allowDomination = True
     The.alpha = 1

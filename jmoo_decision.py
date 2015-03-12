@@ -41,4 +41,7 @@ class jmoo_decision:
         if tmp > 1: return 1
         elif tmp < 0: return 0
         else: return tmp
-    
+
+    def __str__(dec):
+        return str(dec.low)+str(dec.up)
+

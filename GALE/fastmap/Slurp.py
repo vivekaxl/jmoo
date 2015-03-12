@@ -32,14 +32,19 @@ def slurpFile(csvFile):
   
 def slurp(list, names):
     #Vivek
-    #print list #[[decision + objectives (represented as '?')]]
-    #print names#[<$>decision.names (<<)objectives.names]
+    # print list #[[decision + objectives (represented as '?')]]
+    # print names#[<$>decision.names (<<)objectives.names]
     t=want=None
+
+
+
     for rows in list:
         if t:
-            if (len(rows) == want):
+            if len(rows) == want:
                 t.put(rows)
         else:
             want, t = len(rows), Table(names)
 
     return t
+
+
