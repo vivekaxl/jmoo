@@ -1,0 +1,8 @@
+Fonseca     ,Baseline    ,      0.00,      0.99,      0.99,      1.00,      0.00
+Fonseca     ,GALE2_2     ,      8.10,      0.97,      0.94,      0.98,      0.09,      0.50,Rank: #3
+Fonseca     ,GALE        ,     35.70,      0.68,      0.64,      0.71,      0.06,      0.58,Rank: #1
+Fonseca     ,DE          ,   3980.00,      0.72,      0.65,      0.80,      0.05,      0.28,Rank: #2
+===Average Rank===
+GALE2_2:        3.00
+GALE:        1.00
+DE:        2.00
