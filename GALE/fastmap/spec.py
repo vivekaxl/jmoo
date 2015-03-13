@@ -28,11 +28,14 @@ def spec(pos, aSpec,specs,nums,syms,objs,
          numeric  = The.num,
          skip     = The.ignore,
          num      = Num):
+  #print aSpec
+
   if not skip in aSpec:
       specs += [aSpec]
       w1 = aSpec.count(maximze)
       w2 = aSpec.count(minimize)
-      name = sub(r"[^_0-9a-zA-Z]", "",aSpec) 
+      name = sub(r"[^_0-9a-zA-Z]", "",aSpec)
+      #print name
       if  numeric in aSpec : 
         nums  += [num(name,pos)]
       elif w1: 

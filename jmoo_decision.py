@@ -43,5 +43,5 @@ class jmoo_decision:
         else: return tmp
 
     def __str__(dec):
-        return str(dec.low)+str(dec.up)
+        return str(dec.name) + str(" ") + str(dec.low)+str(" ")+str(dec.up)
 

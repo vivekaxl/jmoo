@@ -32,7 +32,7 @@ class BinaryTree(object):
    def prunedLeaves(i):
        return [x for x in i.nodes() if (x.isLeaf() and x.abort == True)]
 
-   def nodes(i,all=None):
+   def nodes(i,all=None):  # finds all the Moo in the tree
      if not all: all=[]
      all += [i]
      for x in [i.lhs,i.rhs]: 

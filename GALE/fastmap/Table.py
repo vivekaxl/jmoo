@@ -31,8 +31,14 @@ class Table(object):
     i.objectives, i.nums, i.syms = [], [], []
     for pos,aSpec in enumerate(specs):
       spec(pos,aSpec,i.specs,i.nums, i.syms, i.objectives)
+    # print specs
+    # print "Specs: ", i.specs
+    # print "Nums: ", i.nums
+    # print "Syms: ", i.syms
+    # print "Objectives: ", i.objectives
     i.headers= i.nums + i.syms + i.objectives
     for pos,h in enumerate(i.headers): h.at = pos
+    # print "Headers: ", i.headers
     i.n = len(i.headers)
     i.puts(data)
 

@@ -23,7 +23,8 @@ if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
     
 from Slurp import *
-from Moo import * 
+from Moo import *
+from Moo2 import *
 from jmoo_individual import *
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -36,16 +37,19 @@ def galeWHERE(problem, population):
     "The Core method behind GALE"
     
     # Compile population into table form used by WHERE
+    # t is a table which has rows and each row has cells
     t = slurp([[x for x in row.decisionValues] + ["?" for y in problem.objectives] for row in population], problem.buildHeader().split(","))
+
 
     # Initialize some parameters for WHERE
     The.allowDomination = True
     The.alpha = 1
-    for i,row in enumerate(t.rows):
+    for i,row in enumerate(t.rows): # Attention JOE: at this point nothing is evaluated, but there might be some rows which are evaluated
         row.evaluated = False
     
     # Run WHERE
-    m = Moo(problem, t, len(t.rows), N=1).divide(minnie=rstop(t))
+    m = Moo(problem, t, len(t.rows), N=1)
+    m.divide(minnie=rstop(t))
           
     # Organizing
     NDLeafs = m.nonPrunedLeaves()                       # The surviving non-dominated leafs
@@ -64,16 +68,19 @@ def galeWHERE2(problem, population):
     "The Core method behind GALE"
 
     # Compile population into table form used by WHERE
+    # t is a table which has rows and each row has cells
     t = slurp([[x for x in row.decisionValues] + ["?" for y in problem.objectives] for row in population], problem.buildHeader().split(","))
+
 
     # Initialize some parameters for WHERE
     The.allowDomination = True
     The.alpha = 1
-    for i,row in enumerate(t.rows):
+    for i,row in enumerate(t.rows): # Attention JOE: at this point nothing is evaluated, but there might be some rows which are evaluated
         row.evaluated = False
 
     # Run WHERE
-    m = Moo(problem, t, len(t.rows), N=1).divide(minnie=rstop(t))
+    m = Moo2(problem, t, len(t.rows), N=1)
+    m.divide(minnie=rstop(t))
 
     # Organizing
     NDLeafs = m.nonPrunedLeaves()                       # The surviving non-dominated leafs
@@ -94,16 +101,16 @@ def galeMutate(problem, NDLeafs):
     #################
     # Mutation Phase
     #################
-    
+    # print "NDleafs: ", len(NDLeafs)
     # Keep track of evals
     numEval = 0
-    
     for leaf in NDLeafs:
-        
+        #print leaf.east.evaluated, leaf.east.cells
+        #print leaf.west.evaluated, leaf.west.cells
+        #exit()
         #Pull out the Poles
         east = leaf.table.rows[0]
         west = leaf.table.rows[-1]
-        
         #Evaluate those poles if needed
         if not east.evaluated:
             for o,objScore in enumerate(problem.evaluate(east.cells)):
@@ -112,10 +119,10 @@ def galeMutate(problem, NDLeafs):
             numEval += 1
         if not west.evaluated:
             for o,objScore in enumerate(problem.evaluate(west.cells)):
-                west.cells[-(len(problem.objectives)-o)] = objScore 
+                west.cells[-(len(problem.objectives)-o)] = objScore
             west.evaluated = True
             numEval += 1
-        
+
         #Score the poles
         n = len(problem.decisions)
         weights = []
@@ -128,52 +135,60 @@ def galeMutate(problem, NDLeafs):
         weightedWest = [c*w for c,w in zip(west.cells[n:], weights)]
         weightedEast = [c*w for c,w in zip(east.cells[n:], weights)]
         westLoss = loss(weightedWest, weightedEast, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
-        eastLoss = loss(weightedEast, weightedWest, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])        
-        
+        eastLoss = loss(weightedEast, weightedWest, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
+
         #Determine better Pole
-        if eastLoss < westLoss: SouthPole,NorthPole = east,west
-        else:                   SouthPole,NorthPole = west,east
-        
+        if eastLoss < westLoss:
+            SouthPole, NorthPole = east, west
+        else:
+            SouthPole, NorthPole = west, east
+
         #Magnitude of the mutations
         g = abs(SouthPole.x - NorthPole.x)
-        
+
+        # print "leaf table rows: ", len(leaf.table.rows)
+
+
         #Iterate over the individuals of the leaf
         for row in leaf.table.rows:
-            
+            # print "row cells: ", len(row.cells)
+
             #Make a copy of the row in case we reject it
             copy = [item for item in row.cells]
             cx   = row.x
-            
+
             for attr in range(0, len(problem.decisions)):
-                
+
                 #just some naming shortcuts
                 me   = row.cells[attr]
                 good = SouthPole.cells[attr]
                 bad  = NorthPole.cells[attr]
                 dec  = problem.decisions[attr]
-                
+                #print "dec: ", dec
+
+
                 #Find direction to mutate (Want to mutate towards good pole)
                 if me > good:  d = -1
                 if me < good:  d = +1
                 if me == good: d =  0
-                
+
                 row.cells[attr] = min(dec.up, max(dec.low, me + me*g*d))
-                
+
             #Project the Mutant
             a    = row.distance(NorthPole)
             b    = row.distance(SouthPole)
             c    = NorthPole.distance(SouthPole)
-            x    = (a**2 + row.c**2 - b**2) / (2*row.c+0.00001)
-            
+            x    = (a**2 + row.c**2 - b**2) / (2*row.c+0.00001)  # this should not be row.c but c
+
             #Test Mutant for Acceptance
             GAMMA = 0.15 #note: make this a property #Vivek: I think this should not be here
-            
+
             #print abs(cx-x), (cx + (g * GAMMA))
             if abs(x-cx) > (g * GAMMA) or problem.evalConstraints(row.cells[:n]): #reject it
                 row.cells = copy
                 row.x = x
-                
-    
+
+
     # After mutation; Convert back to JMOO Data Structures
     population = []
     for leaf in NDLeafs:
@@ -181,14 +196,157 @@ def galeMutate(problem, NDLeafs):
             if row.evaluated:
                 population.append(jmoo_individual(problem, [x for x in row.cells[:len(problem.decisions)]], [x for x in row.cells[len(problem.decisions):]]))
             else:
-                population.append(jmoo_individual(problem, [x for x in row.cells[:len(problem.decisions)]], None)) 
-        
+                population.append(jmoo_individual(problem, [x for x in row.cells[:len(problem.decisions)]], None))
+
+    # Return selectees and number of evaluations
+    return population, numEval
+
+def galeMutate2(problem, NDLeafs):
+
+    #################
+    # Mutation Phase
+    #################
+    print "NDleafs: ", len(NDLeafs)
+    # Keep track of evals
+    numEval = 0
+    for leaf in NDLeafs:
+        #print leaf.east.evaluated, leaf.east.cells
+        #print leaf.west.evaluated, leaf.west.cells
+        #exit()
+        #Pull out the Poles
+        east = leaf.table.rows[0]
+        west = leaf.table.rows[-1]
+        #Evaluate those poles if needed
+        if not east.evaluated:
+            for o,objScore in enumerate(problem.evaluate(east.cells)):
+                east.cells[-(len(problem.objectives)-o)] = objScore
+            east.evaluated = True
+            numEval += 1
+        if not west.evaluated:
+            for o,objScore in enumerate(problem.evaluate(west.cells)):
+                west.cells[-(len(problem.objectives)-o)] = objScore
+            west.evaluated = True
+            numEval += 1
+
+        if not leaf.north.evaluated:
+            for o,objScore in enumerate(problem.evaluate(leaf.north.cells)):
+                leaf.north.cells[-(len(problem.objectives)-o)] = objScore
+            leaf.north.evaluated = True
+            numEval += 1
+
+        if not leaf.south.evaluated:
+            for o,objScore in enumerate(problem.evaluate(leaf.south.cells)):
+                leaf.south.cells[-(len(problem.objectives)-o)] = objScore
+            leaf.south.evaluated = True
+            numEval += 1
+
+
+        #Score the poles
+        n = len(problem.decisions)
+        weights = []
+        for obj in problem.objectives:
+              # w is negative when we are maximizing that objective
+              if obj.lismore:
+                  weights.append(+1)
+              else:
+                  weights.append(-1)
+        weightedWest = [c*w for c,w in zip(west.cells[n:], weights)]
+        weightedEast = [c*w for c,w in zip(east.cells[n:], weights)]
+        weightedNorth = [c*w for c,w in zip(leaf.north.cells[n:], weights)]
+        weightedSouth = [c*w for c,w in zip(leaf.south.cells[n:], weights)]
+
+
+        # print leaf.south.id, leaf.north.id, leaf.east.id, leaf.west.id
+
+        westLoss = loss(weightedWest, weightedEast, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
+        eastLoss = loss(weightedEast, weightedWest, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
+        northLoss = loss(weightedNorth, weightedSouth, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
+        southLoss = loss(weightedSouth, weightedNorth, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
+
+        westeast = abs(westLoss - eastLoss)
+        northsouth = abs(northLoss - southLoss)
+
+        # print westeast, northsouth
+
+
+        if westeast > northsouth: # improvement is more in the west east direction
+            #Determine better Pole
+            if eastLoss < westLoss:
+                SouthPole, NorthPole = east, west
+            else:
+                SouthPole, NorthPole = west, east
+        else:
+
+            if northLoss < southLoss:
+                SouthPole, NorthPole = leaf.north, leaf.south
+            else:
+                SouthPole, NorthPole = leaf.south, leaf.north
+
+
+        #Magnitude of the mutations
+        g = abs(SouthPole.x - NorthPole.x)
+
+        # print "leaf table rows: ", len(leaf.table.rows)
+
+
+        #Iterate over the individuals of the leaf
+        for row in leaf.table.rows:
+            # print "row cells: ", len(row.cells)
+
+            #Make a copy of the row in case we reject it
+            copy = [item for item in row.cells]
+            cx   = row.x
+
+            for attr in range(0, len(problem.decisions)):
+
+                #just some naming shortcuts
+                me   = row.cells[attr]
+                good = SouthPole.cells[attr]
+                bad  = NorthPole.cells[attr]
+                dec  = problem.decisions[attr]
+                #print "dec: ", dec
+
+
+                #Find direction to mutate (Want to mutate towards good pole)
+                if me > good:  d = -1
+                if me < good:  d = +1
+                if me == good: d =  0
+
+                row.cells[attr] = min(dec.up, max(dec.low, me + me*g*d))
+
+            #Project the Mutant
+            a    = row.distance(NorthPole)
+            b    = row.distance(SouthPole)
+            c    = NorthPole.distance(SouthPole)
+            x    = (a**2 + c**2 - b**2) / (2*c+0.00001)
+            y =  abs(a**2-(x/(2*c))**2)**0.5
+
+            #Test Mutant for Acceptance
+            GAMMA = 0.15 #note: make this a property #Vivek: I think this should not be here
+
+            #print abs(cx-x), (cx + (g * GAMMA))
+            if abs(x-cx) > (g * GAMMA) or problem.evalConstraints(row.cells[:n]): #reject it
+                row.cells = copy
+                row.x = x
+
+
+    # After mutation; Convert back to JMOO Data Structures
+    population = []
+    for leaf in NDLeafs:
+        for row in leaf.table.rows:
+            if row.evaluated:
+                population.append(jmoo_individual(problem, [x for x in row.cells[:len(problem.decisions)]], [x for x in row.cells[len(problem.decisions):]]))
+            else:
+                population.append(jmoo_individual(problem, [x for x in row.cells[:len(problem.decisions)]], None))
+
     # Return selectees and number of evaluations
     return population, numEval
 
 def galeRegen(problem, unusedSlot, mutants, MU):
     
     howMany = MU - len(mutants)
+    #print "HowMany: ",howMany
+    # exit()
     
     # Generate random individuals
     population = []

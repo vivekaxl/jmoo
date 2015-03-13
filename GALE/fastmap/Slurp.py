@@ -32,19 +32,24 @@ def slurpFile(csvFile):
   
 def slurp(list, names):
     #Vivek
-    # print list #[[decision + objectives (represented as '?')]]
-    # print names#[<$>decision.names (<<)objectives.names]
+    #print list # [[decision + objectives (represented as '?')]] ? means missing values, it is a list of lists
+    #print names  # [<$>decision.names (<<)objectives.names]
+
+
     t=want=None
 
-
+    #print "Length of the list is : ", len(list)
 
     for rows in list:
         if t:
-            if len(rows) == want:
+            if len(rows) == want: #check if it has the same numbers of columns as the first row
                 t.put(rows)
         else:
-            want, t = len(rows), Table(names)
+            want, t = len(rows), Table(names) # it seems Joe has skipped the first row
+            t.put(rows)  # added by Vivek
 
+    # print "Number of rows in the table is: ", len(t.rows)
+    # print "This is how a row looks like: ", t.rows[0]
     return t
 
 

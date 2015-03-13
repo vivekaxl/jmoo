@@ -35,7 +35,8 @@ from jmoo_problems import *
 algorithms = [
               
               #MOEAS.jmoo_NSGAII(),
-              MOEAS. jmoo_GALE2_1(),
+              #MOEAS. jmoo_GALE2_1(),
+              MOEAS. jmoo_GALE2_2(),
               MOEAS. jmoo_GALE(),
               #MOEAS.jmoo_SPEA2(),
               MOEAS.jmoo_DE()
@@ -44,12 +45,12 @@ algorithms = [
 
 problems = [
             #dtlz1()
-            fonseca(3)#,
+            fonseca(3),
             #zdt1()
             #POM3B()
             #POM3A(), POM3B(), POM3C()#, POM3D()
              #osyczka2(),
-            #viennet2()#, tanaka()#, golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
+            viennet2(), tanaka()#, golinski()#, POM3A(), POM3B(), POM3C(), POM3D()
             
             ]
 build_new_pop = False                                       # Whether or not to rebuild the initial population
