@@ -256,7 +256,7 @@ def galeMutate2(problem, NDLeafs):
         weightedSouth = [c*w for c,w in zip(leaf.south.cells[n:], weights)]
 
 
-        # print leaf.south.id, leaf.north.id, leaf.east.id, leaf.west.id
+        print leaf.south.id, leaf.north.id, leaf.east.id, leaf.west.id
 
         westLoss = loss(weightedWest, weightedEast, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
         eastLoss = loss(weightedEast, weightedWest, mins = [obj.low for obj in problem.objectives], maxs = [obj.up for obj in problem.objectives])
@@ -266,7 +266,7 @@ def galeMutate2(problem, NDLeafs):
         westeast = abs(westLoss - eastLoss)
         northsouth = abs(northLoss - southLoss)
 
-        # print westeast, northsouth
+        print westeast, northsouth
 
 
         if westeast > northsouth: # improvement is more in the west east direction
@@ -318,6 +318,9 @@ def galeMutate2(problem, NDLeafs):
             a    = row.distance(NorthPole)
             b    = row.distance(SouthPole)
             c    = NorthPole.distance(SouthPole)
+            if c == 0:
+                print "Something's wrong"
+                exit()
             x    = (a**2 + c**2 - b**2) / (2*c+0.00001)
             y =  abs(a**2-(x/(2*c))**2)**0.5
 
